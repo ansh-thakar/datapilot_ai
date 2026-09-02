@@ -14,10 +14,9 @@ def query_gemini(prompt_text: str, dataset_context: str) -> str:
         return "⚠️ **API Key Missing**: Please add `GEMINI_API_KEY` inside `.streamlit/secrets.toml`."
 
     candidate_models = [
-        "gemini-2.5-flash",
-        "gemini-3.5-flash",
-        "gemini-3.1-flash-lite",
-        "gemini-2.5-pro"
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite",
+        "gemini-3.1-pro"
     ]
 
     friendly_system_instruction = (
